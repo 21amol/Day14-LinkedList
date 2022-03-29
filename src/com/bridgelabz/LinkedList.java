@@ -29,4 +29,23 @@ public class LinkedList {
         }
     }
 
+    public void insertAfter(int newData, int data) {
+        Node newNode = new Node(newData);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            Node temp = head;
+            Node nextNode;
+            while (temp != null) {
+                nextNode = temp.next;
+                if (temp.data == data) {
+                    temp.next = newNode;
+                    newNode.next = nextNode;
+                }
+     //           System.out.print(temp.data + " -> ");
+                temp = temp.next;
+            }
+        }
+    }
 }
