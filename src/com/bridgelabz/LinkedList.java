@@ -90,17 +90,21 @@ public class LinkedList {
                 Node prevNode = temp;
                 prevNode.next = temp.next.next;
                 System.out.println("");
-                System.out.println(temp.data + "->");
+          //      System.out.println(temp.data + "->");
                 break;
             } else {
                 temp = temp.next;
             }
         }
+        int count = 0;
         temp = head;
         while (temp != null) {
             System.out.print(temp.data + "->");
             temp = temp.next;
+            count = count + 1;
         }
+        System.out.println("");
+        System.out.println("Number of elements in Linked list: " + count);
     }
 }
 
