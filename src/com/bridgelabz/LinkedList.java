@@ -43,9 +43,14 @@ public class LinkedList {
                     temp.next = newNode;
                     newNode.next = nextNode;
                 }
-     //           System.out.print(temp.data + " -> ");
                 temp = temp.next;
             }
         }
     }
+
+    public void pop() {
+        head = head.next;
+    }
+
+
 }
