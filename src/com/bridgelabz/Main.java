@@ -9,10 +9,12 @@ public class Main {
         list.add(70);
         list.add(30);
         list.add(56);
-        // list.insertAfter(30, 56);
+        //list.insertAfter(30, 40);
         // list.pop();
         // list.popLast();
-        list.search(56);
-    //    list.showList();
+        list.showList();
+        list.search(30);
+        list.insertAfter(40, 30);
+        list.showList();
     }
 }

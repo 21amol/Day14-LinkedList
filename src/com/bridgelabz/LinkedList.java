@@ -69,14 +69,14 @@ public class LinkedList {
         Node temp = head;
         while (temp != null) {
             if (temp.data == data) {
-                System.out.println("Data found " + temp.data);
+                System.out.println("");
+                System.out.println("Data found: " + temp.data);
                 break;
             } else {
                 temp = temp.next;
-                System.out.println("Data not found, Try again");
-                break;
             }
         }
+
     }
 }
 
