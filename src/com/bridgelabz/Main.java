@@ -12,9 +12,11 @@ public class Main {
         //list.insertAfter(30, 40);
         // list.pop();
         // list.popLast();
+       // list.showList();
+       // list.search(30);
+       list.insertAfter(40, 30);
         list.showList();
-        list.search(30);
-        list.insertAfter(40, 30);
-        list.showList();
+        list.searchAndDelete(40);
+
     }
 }

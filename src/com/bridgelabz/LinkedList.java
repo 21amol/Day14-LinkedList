@@ -78,5 +78,30 @@ public class LinkedList {
         }
 
     }
+
+    public void searchAndDelete(int data) {
+        Node temp = head;
+        while (temp != null) {
+            //  if (temp.data == data) {
+            //    System.out.println("");
+            //  System.out.println("Data found: " + temp.data);
+
+            if (temp.next.data == data) {
+                Node prevNode = temp;
+                prevNode.next = temp.next.next;
+                System.out.println("");
+                System.out.println(temp.data + "->");
+                break;
+            } else {
+                temp = temp.next;
+            }
+        }
+        temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + "->");
+            temp = temp.next;
+        }
+    }
 }
+
 
