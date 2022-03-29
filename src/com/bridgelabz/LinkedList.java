@@ -52,5 +52,17 @@ public class LinkedList {
         head = head.next;
     }
 
+    public void popLast() {
+        Node temp = head;
 
+        while (temp != null) {
+            if (temp.next == null) {
+                temp = null;
+            } else {
+                System.out.print(temp.data + "->");
+                temp = temp.next;
+            }
+        }
+
+    }
 }
