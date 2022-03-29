@@ -11,7 +11,8 @@ public class Main {
         list.add(56);
         // list.insertAfter(30, 56);
         // list.pop();
-        list.popLast();
-      //  list.showList();
+        // list.popLast();
+        list.search(56);
+    //    list.showList();
     }
 }

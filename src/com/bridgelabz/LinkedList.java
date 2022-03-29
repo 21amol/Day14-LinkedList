@@ -63,6 +63,20 @@ public class LinkedList {
                 temp = temp.next;
             }
         }
+    }
 
+    public void search(int data) {
+        Node temp = head;
+        while (temp != null) {
+            if (temp.data == data) {
+                System.out.println("Data found " + temp.data);
+                break;
+            } else {
+                temp = temp.next;
+                System.out.println("Data not found, Try again");
+                break;
+            }
+        }
     }
 }
+
